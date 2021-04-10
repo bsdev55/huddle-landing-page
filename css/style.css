@@ -1,0 +1,461 @@
+/* Start Global Rules */
+*{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 0;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+.clearfix{
+    clear: both;
+}
+h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: #212121;
+}
+.btn{
+    width: 250px;
+    color: #fff;
+    background-color: #fc54be;
+    border-radius: 25px;
+    border: none;
+    padding: 15px 20px;
+    transition: .6s ease-in;
+}
+.btn:hover{
+    opacity: .7;
+}
+/* End Global Rules */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Media Query */
+@media (max-width: 576px) {
+    .container {
+        width: 100%;  
+    }
+}
+@media (min-width: 576px) {
+    .container {
+        width: 540px;  
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;  
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;  
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;  
+    }
+}
+/*start Landing page*/
+.header{
+    position: relative;
+    background: url('../images/bg-hero-desktop.svg') #edfbfe;
+    height: 100vh;
+}
+.header .nav .container {
+    padding: 30px;
+}
+.header .nav .container .logo{
+    width: 150px;
+    margin-top: 20px;
+}
+.header .nav .container button{
+    width: 180px;
+    padding: 15px;
+    color: #212121;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 3px 12px -1px #ade2f7;
+    float: right;
+}
+.header .header-content {
+    margin-top: 60px;
+}
+.header .header-content .container {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    gap: 25px;
+}
+.header .header-content .container .inner-text {
+    padding: 20px;
+}
+.header .header-content .container .inner-text h1{
+    font-size: 38px;
+    font-weight: 600;
+    color:#1b262c;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+}
+.header .header-content .container .inner-text p{
+    font-size: 16px;
+    color: #382039;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+.header .header-content .container img{
+    width: 600px;
+}
+
+.mainly {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.mainly .content {
+    margin-bottom: 30px;
+}
+.mainly .content .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(45%,1fr));
+    gap: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 1px #dbd8e3;
+    padding: 40px 30px;
+    border-radius: 15px;
+}
+.mainly .content .container img {
+    width: 450px;
+}
+.mainly .content .container .text {
+    margin: 5rem 3rem;
+    padding: 15px;
+}
+.mainly .content .container .text h3{
+    font-size: 28px;
+    font-weight: bold;
+    color: #212121;
+    letter-spacing: 1.2;
+    margin-bottom: 20px;
+}
+.mainly .content .container .text p {
+    font-size: 16px;
+    color: #989898;
+    line-height: 1.5;
+}
+.enroll-section{
+    padding-top: 5rem;
+    position: relative;
+    margin-top: 2rem;
+}
+.enroll-section .container{
+    text-align: center;
+}
+.enroll-section .container .inner-content {
+    width: 800px;
+    box-shadow: 0px 0px 5px 1px rgb(73, 72, 73);
+    border-radius: 25px;
+    background-color: #fff;
+    padding: 50px;
+    position: absolute;
+    top: -2%;
+    left: 20%;
+}
+.enroll-section .container .inner-content h2{
+    margin-bottom: 2rem;
+}
+.footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #00252e;
+    color: #fff;
+    margin-top: 6rem;
+}
+.footer > .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+.footer .container .info .logo{
+    filter: brightness(0) invert(1);
+    width: 150px;
+    margin-bottom: 25px;
+}
+.footer .container .info ul{
+    list-style: none;
+    margin-left: 0;
+    padding: 0;
+}
+.footer .container .info ul li{
+    padding: 10px;
+}
+.footer .container .info p{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    display: inline;
+    
+}
+.footer .container .info img{
+    margin-right: 15px;
+    display: inline;
+}
+.footer .container .links{
+    padding: 15px 0;
+}
+.footer .container .links ul{
+    list-style: none;
+    padding: 40px 0;
+    display: inline-block;
+    margin-left: 15px;
+}
+.footer .container .links ul li{
+    padding: 15px;
+}
+.footer .container .links ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: .5s ease-in-out;
+}
+.footer .container .links ul li a:hover{
+    color: #fc54be;
+    text-decoration: underline;
+}
+.footer .container .icons{
+    padding: 20px 0;
+}
+.footer .container .icons ul {
+    list-style: none;
+    padding: 40px;
+}
+.footer .container .icons ul li{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 20px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: .6s ease-out;
+}
+.footer .container .icons ul li:hover{
+    color:#fc54be;
+    border-color: #fc54be;
+}
+.footer .copyright .container p{
+    text-align: right;
+    float: right;
+}
+
+/* Media Query */
+@media (max-width: 576px) {
+    .header{
+        background: url('../images/bg-hero-mobile.svg') #edfbfe;
+        height: 110vh;
+    }
+    .header .nav .container {
+        padding: 20px;
+    }
+    .header .nav .container .logo {
+        width: 100px;
+        margin-top: 15px;
+    }
+    .header .nav .container button{
+        width: 120px;
+    }
+    .header .header-content {
+        margin-top: 30px;
+    }
+    .header .header-content .container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2,1fr);
+        gap: 10px;
+    }
+    .header .header-content .container .inner-text {
+        padding: 20px;
+        text-align: center;
+    }
+    .header .header-content .container .inner-text h1{
+        font-size: 28px;
+    }
+    .header .header-content .container .inner-text p{
+        font-size: 14px;
+    }
+    .header .header-content .container img{
+        width: 300px;
+        margin: 15px auto;
+    }
+    .mainly {
+        margin-top: 60px;
+        padding-bottom: 40px;
+    }
+    .mainly .content {
+        margin-bottom: 30px;
+    }
+    .mainly .content .container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(auto-fill, 1fr);
+        gap: 10px;
+        border-radius: 15px;
+        margin: auto 15px;
+        width:calc(100% - 18px) !important;
+    }
+    .mainly .content .container img {
+        width: 300px;
+        grid-row: 1/1;
+        margin: auto;
+    }
+    .mainly .content .container .text {
+        margin: 20px auto;
+        padding: 15px;
+    }
+    .mainly .content .container .text h3{
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .mainly .content .container .text p {
+        font-size: 14px;
+    }
+    .enroll-section{
+        padding-top: 2rem;
+        margin-top: auto;
+    }
+    .enroll-section .container .inner-content {
+        width: calc(100% - 10%);
+        box-shadow: 0px 0px 5px 1px rgb(73, 72, 73);
+        padding: 20px;
+        top: 100%;
+        left: 5%;
+    }
+    .enroll-section .container .inner-content h2{
+        margin-bottom: 2rem;
+        font-size: 16px;
+    }
+    .enroll-section .container .inner-content .btn {
+        width: 180px;
+        font-size: 14px;
+        padding: 10px;
+    }
+    .footer > .container{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(auto-fill, 1fr);
+        gap: 10px;
+    }
+    .footer .container .info .logo{
+        filter: brightness(0) invert(1);
+        width: 150px;
+        margin-bottom: 25px;
+    }
+    .footer .container .links ul {
+        padding: 10px;
+    }
+    .footer .container .icons ul {
+        padding: 10px;
+        text-align: center;
+    }
+    .footer .copyright .container p{
+        text-align: center;
+        float: none;
+        font-size: 14px;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .header{
+        background: url('../images/bg-hero-desktop.svg') #edfbfe;
+    }
+    .header .nav .container {
+        padding: 20px;
+    }
+    .header .nav .container .logo {
+        width: 120px;
+        margin-top: 15px;
+    }
+    .header .nav .container button{
+        width: 120px;
+    }
+    .header .header-content {
+        margin-top: 30px;
+    }
+    .header .header-content .container {
+        display: grid;
+        grid-template-columns: repeat(2,minmax(300px, 1fr));
+        gap: 20px;
+    }
+    .header .header-content .container .inner-text {
+        padding: 20px;
+        text-align: left;
+    }
+    .header .header-content .container .inner-text h1{
+        font-size: 28px;
+    }
+    .header .header-content .container .inner-text p{
+        font-size: 16px;
+    }
+    .header .header-content .container img{
+        width: 450px;
+        margin-top: 3rem;
+    }
+    
+    .mainly .content {
+        margin-bottom: 30px;
+    }
+    .mainly .content .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 1fr);
+        gap: 10px;
+        border-radius: 15px;
+    }
+    .mainly .content .container img {
+        width: 300px;
+        margin: auto;
+    }
+    .mainly .content .container .text {
+        margin: 20px auto;
+        padding: 15px;
+    }
+    .mainly .content .container .text h3{
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .mainly .content .container .text p {
+        font-size: 14px;
+    }
+    .enroll-section{
+        padding-top: 2rem;
+        margin-top: auto;
+    }
+    .enroll-section .container .inner-content {
+        width: 700px;
+        top: -100%;
+        left: 14%;
+    }
+    .footer > .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+        gap: 10px;
+    }
+    .footer .container .info .logo{
+        margin-top: 25px;
+    }
+    .footer .container .links ul {
+        padding: 10px;
+        display: inline;
+        margin-bottom: 0;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .footer .container .icons ul li {
+        margin-left: 5px;
+    }
+    .footer .container .links ul li{
+        padding: 10px 15px;
+    }
+}
